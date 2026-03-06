@@ -2,7 +2,7 @@ package persistence;
 
 import model.Noticia;
 
-public class NoticiaDAO implements GenericDAO<Noticia> {
+public class NoticiaDAO implements IGenericDAO<Noticia> {
     @Override
     public void insertar(Noticia entidad) {
         System.out.println("Insertando " + entidad.getTitular());

@@ -2,7 +2,7 @@ package persistence;
 
 import model.Postgrado;
 
-public class PostgradoDAO implements GenericDAO<Postgrado>{
+public class PostgradoDAO implements IGenericDAO<Postgrado> {
     @Override
     public void insertar(Postgrado entidad) {
         System.out.println("Insertando " + entidad.getNombre());

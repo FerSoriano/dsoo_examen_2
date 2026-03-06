@@ -2,7 +2,7 @@ package persistence;
 
 import model.Investigacion;
 
-public class InvestigacionDAO implements GenericDAO<Investigacion>{
+public class InvestigacionDAO implements IGenericDAO<Investigacion> {
 
     @Override
     public void insertar(Investigacion entidad) {

@@ -2,7 +2,7 @@ package persistence;
 
 import model.Carrera;
 
-public class CarreraDAO implements GenericDAO<Carrera> {
+public class CarreraDAO implements IGenericDAO<Carrera> {
 
     @Override
     public void insertar(Carrera entidad) {
