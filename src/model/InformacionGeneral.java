@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InformacionGeneral {
     private int id;
     private int categoria;
@@ -8,6 +11,7 @@ public class InformacionGeneral {
     private String mision;
     private String estructura;
     private String funciones;
+    private List<Departamento> departamentos;
 
     public InformacionGeneral(int id, int categoria, String nombre, String descripcion, String mision, String estructura, String funciones) {
         this.id = id;
@@ -17,6 +21,7 @@ public class InformacionGeneral {
         this.mision = mision;
         this.estructura = estructura;
         this.funciones = funciones;
+        this.departamentos = new ArrayList<>();
     }
 
     public int getId() {
@@ -73,5 +78,13 @@ public class InformacionGeneral {
 
     public void setFunciones(String funciones) {
         this.funciones = funciones;
+    }
+
+    public void agregarDepartamento(Departamento depto) {
+        this.departamentos.add(depto);
+    }
+
+    public List<Departamento> getDepartamentos() {
+        return departamentos;
     }
 }
